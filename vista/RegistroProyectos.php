@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Proyectos</title>
-</head>
-<body>
-    <h1>REGISTRO DE PROYECTOS</h1>
-<?php include("../controlador/RegistrarProyecto.php");?>
-    <form action="RegistroProyectos.php" method="post">
+<?php
+    include("Navegacion.php");
+    echo "<h1>REGISTRO DE PROYECTOS</h1>";
+   
+ include("../controlador/RegistrarProyecto.php");
+  echo'  <form action="RegistroProyectos.php" method="post">
         <label for="CodigoProyecto">Codigo Proyecto:</label>
         <input type="number" name="CodigoProyecto" id="Codigo"><br>
         <label for="NombreProyecto">Nombre de Proyecto:</label>
@@ -20,7 +15,9 @@
         <button type="submit">Registrar Proyecto</button>
 
     </form>
-   
+    
+    ';
 
-</body>
-</html>
+ include("Footer.php");
+   ?>
+

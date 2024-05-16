@@ -5,7 +5,7 @@
 
  $ResultadoEsp=False;
     try {
-    $ResultadoEsp= mysqli_query($Conexion, $ConsultaEsp);    
+    $ResultadoEsp= mysqli_query($Conexion, $ConsultaEsp);   
         }
     
     catch (exception $e)

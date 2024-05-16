@@ -60,7 +60,7 @@ else if (!empty($_POST["CodigoEstudiante"]) && !empty($_POST["PrimerNombre"]) &&
                  }
     else { $Mensaje="El estudiante se actualizo correctamente"; }
          //echo $Consulta;
-         //header('Location: Estudiantes.php');
+         header('Location: Estudiantes.php');
 
     
     } //Fin del if 
